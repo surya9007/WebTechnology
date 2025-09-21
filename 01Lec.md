@@ -1,147 +1,153 @@
+# World Wide Web (WWW) -
 
-# 📘 HTML Notes – Basic (Part 1)
+## Introduction to World Wide Web
+The **World Wide Web (WWW)** is a system that allows people to share and access information over the Internet.  
+It is not the same as the Internet; rather, it is a **service on the Internet**.  
 
-This document contains detailed notes for **HTML – Basic (Part 1)**. It covers fundamental concepts, elements, and best practices required to build a simple web page using HTML.
+- Invented by **Tim Berners-Lee** in 1989 at CERN.  
+- Uses **HTTP (Hypertext Transfer Protocol)** as the communication protocol.  
+- Provides access to documents, multimedia, and applications interconnected through **hyperlinks**.  
+- Each resource is identified by a **URL (Uniform Resource Locator)**.  
 
----
-
-## ✅ Topics Covered
-- What is HTML?
-- Basic structure of an HTML document
-- Commonly used HTML tags
-  - Headings (`<h1>` to `<h6>`)
-  - Paragraphs (`<p>`)
-  - Links (`<a>`)
-  - Images (`<img>`)
-  - Lists (`<ol>`, `<ul>`, `<li>`)
-  - Line breaks (`<br>`) and horizontal lines (`<hr>`)
-- Attributes and how to use them
-- Comments in HTML
-- Nesting elements properly
-- Case sensitivity
-- Best practices for writing clean and valid HTML
+### Key Components of WWW:
+1. **Web Browsers** – Client software to access websites (Chrome, Firefox).  
+2. **Web Servers** – Store and serve web pages.  
+3. **HTTP/HTTPS Protocols** – Rules for transferring data.  
+4. **Hyperlinks** – Connect different documents/resources.  
+5. **Search Engines** – Help in discovering websites (Google, Bing).  
 
 ---
 
-## ✅ Basic Structure of an HTML Document
+## Web Page
+A **Web Page** is a single document on the web, generally written in **HTML**.  
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My First Web Page</title>
-  </head>
-  <body>
-    <h1>Welcome to HTML</h1>
-    <p>This is a paragraph of text.</p>
-  </body>
-</html>
-```
+Types of Web Pages:
+- **Static Web Page**: Content remains fixed, only changes if the developer edits it.  
+- **Dynamic Web Page**: Content changes based on user interaction, location, time, or database queries.  
+
+### Example:
+- Static: A company’s contact page.  
+- Dynamic: An online shopping cart page.  
 
 ---
 
-## ✅ Commonly Used HTML Tags
-
-### Headings
-```html
-<h1>Main Heading</h1>
-<h2>Subheading</h2>
-...
-<h6>Smallest Heading</h6>
-```
-
-### Paragraphs
-```html
-<p>This is a paragraph.</p>
-```
-
-### Links
-```html
-<a href="https://www.example.com">Visit Example</a>
-```
-
-### Images
-```html
-<img src="image.jpg" alt="A description">
-```
-
-### Lists
-
-**Ordered List (Numbered)**
-
-```html
-<ol>
-  <li>First item</li>
-  <li>Second item</li>
-</ol>
-```
-
-**Unordered List (Bulleted)**
-
-```html
-<ul>
-  <li>Apple</li>
-  <li>Banana</li>
-</ul>
-```
-
-### Line Break and Horizontal Line
-```html
-<br>  <!-- Inserts a line break -->
-<hr>  <!-- Inserts a horizontal line -->
-```
+## Home Page
+- The **home page** is the **default page** of a website.  
+- Acts as the **starting point** of navigation.  
+- Common file names: `index.html`, `default.html`.  
+- Provides menus, links, and site overview.  
 
 ---
 
-## ✅ Attributes
+## Website
+A **Website** is a collection of interconnected web pages hosted on a domain/server.  
 
-Example:
+### Classification of Websites:
+1. **Static Websites**
+   - Built with HTML & CSS.  
+   - No interaction with databases.  
+   - Example: Portfolio, blogs.  
 
-```html
-<a href="https://www.google.com" target="_blank">Google</a>
-```
-
-- `href="..."` → URL of the link.
-- `target="_blank"` → Opens the link in a new tab.
-
----
-
-## ✅ Comments in HTML
-
-```html
-<!-- This is a comment -->
-```
+2. **Dynamic Websites**
+   - Content changes dynamically.  
+   - Built using server-side technologies (PHP, Python, Node.js).  
+   - Connected with databases (MySQL, MongoDB).  
+   - Example: Amazon, Facebook, YouTube.  
 
 ---
 
-## ✅ Nesting Elements
+## Client-Server Computing Concepts
+The **client-server model** is the backbone of the WWW.  
 
-Example:
+- **Client**: A user’s computer, mobile, or browser that requests services.  
+- **Server**: A remote computer that provides services like files, databases, or web pages.  
 
-```html
-<div>
-  <h2>My Title</h2>
-  <p>This is a paragraph inside a div.</p>
-</div>
-```
+### Process Flow:
+1. User types a URL in the browser.  
+2. Browser sends a request to the web server.  
+3. Server processes the request (possibly fetches from a database).  
+4. Response (HTML, CSS, JavaScript, data) is sent back.  
+5. Browser renders the page for the user.  
 
----
-
-## ✅ Best Practices
-✔ Use proper indentation  
-✔ Always close tags  
-✔ Use meaningful content inside tags  
-✔ Validate your HTML using tools like [W3C Validator](https://validator.w3.org/)  
+This communication mostly uses the **HTTP/HTTPS protocol**.  
 
 ---
 
-## 📌 Key Summary
-- HTML forms the skeleton of a webpage.
-- It uses tags and attributes to structure and define content.
-- Common elements include headings, paragraphs, links, images, and lists.
-- The document structure starts with `<!DOCTYPE html>`, `<html>`, `<head>`, and `<body>`.
-- Always use proper nesting, indentation, and comments to make code clean and readable.
+## Web Client and Web Server
+- **Web Client**: Software or application used to access web resources (e.g., browsers).  
+- **Web Server**: Software running on a server computer that handles client requests.  
+
+### Examples of Web Servers:
+- Apache HTTP Server  
+- Nginx  
+- Microsoft IIS  
 
 ---
 
-Happy learning and happy coding! 🚀✨
+## Web Browser
+A **web browser** is an application program that retrieves and displays content from the WWW.  
+
+### Common Browsers:
+- Google Chrome  
+- Mozilla Firefox  
+- Microsoft Edge  
+- Safari  
+
+### Functions of a Browser:
+- Interpret HTML, CSS, and JavaScript.  
+- Provide navigation tools (back, forward, reload).  
+- Support plugins and extensions.  
+- Handle cookies, cache, and security protocols (HTTPS, SSL).  
+
+---
+
+## Client-Side Scripting Languages
+Executed on the **user’s browser**. They make web pages interactive.  
+
+### Examples:
+- **HTML** – Structure of a webpage.  
+- **CSS** – Styling and design.  
+- **JavaScript** – Adds interactivity (form validation, dynamic updates).  
+
+### Advantages:
+- Faster response as processing happens in the browser.  
+- Reduces server load.  
+
+### Limitations:
+- Security risks (code visible to users).  
+- Limited access to server resources.  
+
+---
+
+## Server-Side Scripting Languages
+Executed on the **web server** before sending the response to the browser.  
+
+### Examples:
+- **PHP** – Widely used in WordPress, Drupal.  
+- **Node.js** – JavaScript runtime for server-side apps.  
+- **Python (Django, Flask)** – Popular in modern web development.  
+- **Java (JSP, Servlets)** – Enterprise-level apps.  
+- **Ruby on Rails** – Used in startups and rapid prototyping.  
+
+### Advantages:
+- Access to server resources and databases.  
+- Better security since the code is hidden from the client.  
+- Ability to generate dynamic and personalized web content.  
+
+### Limitations:
+- Slower compared to client-side since requests go to the server.  
+- Requires more server resources.  
+
+---
+
+## Static vs Dynamic Website (Comparison)
+
+| Feature             | Static Website                          | Dynamic Website                          |
+|---------------------|------------------------------------------|------------------------------------------|
+| Content             | Fixed, same for every visitor           | Changes based on user/data                |
+| Technology Used     | HTML, CSS only                          | Server-side scripts + Database            |
+| Speed               | Very fast                               | Slower due to processing                  |
+| Cost                | Cheaper to host                        | More expensive (needs database, server)   |
+| Example             | Portfolio site, Resume site             | E-commerce, Social media sites            |
+
+---
