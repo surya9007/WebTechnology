@@ -460,7 +460,7 @@ function hello() {
   </main>
 
   <footer>
-    <p>&copy; 2025 Raghul | Made with ❤️ using HTML</p>
+    <p>&copy; 2025 Surya | Made with ❤️ using HTML</p>
   </footer>
 
   <noscript>Your browser does not support JavaScript!</noscript>
