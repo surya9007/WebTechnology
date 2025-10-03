@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Tutorial - All in One</title>
+    <style>
+        body {
+            background-image: url("images.jpg");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        a {
+            margin: 10px;
+            font-size: 18px;
+            text-decoration: none;
+            color: blue;
+        }
+        marquee {
+            font-size: 22px;
+            color: red;
+            font-weight: bold;
+        }
+        section {
+            margin-top: 40px;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <marquee>HTML Tutorial</marquee>
+
+    <!-- HOME -->
+    <h1 id="home">Welcome to HTML Tutorial</h1>
+    <p>Click topics below:</p>
+    <a href="#formatting">Formatting Styles & Headings</a> |
+    <a href="#fonts">Font Styles & Image Tag</a> |
+    <a href="#marquee">Marquee Examples</a> |
+    <a href="#othertags">Other Tags</a> |
+    <a href="#list">List Example</a>
+
+    <!-- FORMATTING -->
+    <section id="formatting">
+        <h2>Formatting Styles and Headings</h2>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <p><b>Bold Text</b></p>
+        <p><i>Italic Text</i></p>
+        <p><u>Underline Text</u></p>
+        <p><strike>Strike Through</strike></p>
+        <p>H<sub>2</sub>O (Subscript)</p>
+        <p>X<sup>2</sup> + Y<sup>2</sup> (Superscript)</p>
+
+        <a href="#home">Back to Home</a>
+    </section>
+
+    <!-- FONTS -->
+    <section id="fonts">
+        <h2>Font Styles and Image</h2>
+        <p style="font-family: Arial; color: blue;">This is Arial Font</p>
+        <p style="font-family: 'Times New Roman'; color: green;">This is Times New Roman</p>
+        <p style="font-family: Courier; color: purple;">This is Courier Font</p>
+
+        <img src="sample.jpg" width="250" height="200" alt="Sample Image">
+
+        <a href="#home">Back to Home</a>
+    </section>
+
+    <!-- MARQUEE -->
+    <section id="marquee">
+        <h2>Marquee Examples</h2>
+        <marquee direction="left">This text moves left</marquee>
+        <marquee direction="right">This text moves right</marquee>
+        <marquee behavior="alternate">Bouncing Text</marquee>
+        <marquee><img src="image.jpg" width="150" height="100"></marquee>
+        <marquee><a href="https://www.google.com">Google Hyperlink</a></marquee>
+
+        <a href="#home">Back to Home</a>
+    </section>
+
+    <!-- OTHER TAGS -->
+    <section id="othertags">
+        <h2>Other Tags</h2>
+        First Line<br>
+        Second Line<br><br>
+        <hr>
+
+        <h3>Preformatted Text</h3>
+        <pre>
+Roses are red,
+Violets are blue,
+HTML is fun,
+And so are you!
+        </pre>
+
+        <p>This is a normal paragraph tag.</p>
+
+        <a href="#home">Back to Home</a>
+    </section>
+
+    <!-- LISTS -->
+    <section id="list">
+        <h2>List Example</h2>
+        <img src="image.jpg" alt="Main Item" width="150" 
+             style="position: absolute; top: 10px; right: 10px;">
+
+        <marquee><h3>List Example with Nested Items</h3></marquee>
+
+        <ol>
+            <li style="color:blue; font-family: Arial;">Item 1
+                <ul>
+                    <li>Sub-item 1.1</li>
+                    <li>Sub-item 1.2</li>
+                </ul>
+            </li>
+            <hr>
+            <li style="color:green; font-family: Courier;">Item 2
+                <ul>
+                    <li>Sub-item 2.1</li>
+                    <li>Sub-item 2.2</li>
+                </ul>
+            </li>
+            <hr>
+            <li style="color:purple; font-family: Georgia;">Item 3
+                <ul>
+                    <li>Sub-item 3.1</li>
+                    <li>Sub-item 3.2</li>
+                </ul>
+            </li>
+            <hr>
+        </ol>
+
+        <a href="#home">Back to Home</a>
+    </section>
+
+</body>
+</html>
