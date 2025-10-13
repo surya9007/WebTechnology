@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table with Rowspan and Colspan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      border: 2px solid black;
+      border-collapse: collapse; /* remove space between borders */
+      width: 80%;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid black;
+      text-align: center;
+      padding: 10px;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    td {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">HTML Table Example with Rowspan and Colspan</h2>
+
+  <table width="80%" height="200" cellpadding="15" cellspacing="5">
+    <tr>
+      <th>Item</th>
+      <th colspan="2">Details</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Laptop</td>
+      <td>Brand</td>
+      <td>Dell</td>
+      <td rowspan="2">$800</td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td>Inspiron 15</td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td colspan="2">Apple iPhone 14</td>
+      <td>$999</td>
+    </tr>
+    <tr>
+      <td>Tablet</td>
+      <td>Brand</td>
+      <td>Samsung</td>
+      <td>$600</td>
+    </tr>
+  </table>
+
+</body>
+</html>

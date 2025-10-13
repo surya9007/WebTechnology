@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Frames Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    #container {
+      display: flex;
+      height: 90vh;
+    }
+    #menu {
+      width: 20%;
+      background-color: #f2f2f2;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    #menu a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    #content {
+      width: 80%;
+      border-left: 2px solid #ccc;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML Frames Example</h1>
+  </header>
+
+  <div id="container">
+    <!-- Main Menu -->
+    <div id="menu">
+      <h3>MAIN MENU</h3>
+      <a href="topic1.html" target="contentFrame">Topic 1</a>
+      <a href="topic2.html" target="contentFrame">Topic 2 - View Example</a>
+      <a href="topic3.html" target="contentFrame">Topic 3 - Example</a>
+    </div>
+
+    <!-- Content Area -->
+    <div id="content">
+      <iframe name="contentFrame" src="topic1.html"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>

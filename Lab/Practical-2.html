@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordered & Nested Unordered List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    /* Top-right image */
+    .top-right-img {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 100px;
+      border-radius: 10px;
+    }
+
+    /* Marquee heading */
+    marquee {
+      font-size: 30px;
+      font-weight: bold;
+      color: darkblue;
+      margin-bottom: 20px;
+    }
+
+    /* Ordered list item styles */
+    ol li:nth-child(1) { color: red; font-family: 'Courier New', monospace; }
+    ol li:nth-child(2) { color: green; font-family: 'Times New Roman', serif; }
+    ol li:nth-child(3) { color: orange; font-family: Verdana, sans-serif; }
+    ol li:nth-child(4) { color: purple; font-family: Georgia, serif; }
+    ol li:nth-child(5) { color: teal; font-family: Tahoma, sans-serif; }
+
+    /* Nested unordered list style */
+    ul {
+      list-style-type: circle;
+      margin-left: 20px;
+    }
+
+    hr {
+      border: 1px solid #000;
+      margin: 10px 0 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top-right image -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Main Item Image" class="top-right-img">
+
+  <!-- Marquee heading -->
+  <marquee behavior="scroll" direction="left">HTML Lists Tutorial</marquee>
+
+  <!-- Ordered list with nested unordered lists -->
+  <ol>
+    <li>Main Item 1
+      <ul>
+        <li>Sub Item 1.1</li>
+        <li>Sub Item 1.2</li>
+        <li>Sub Item 1.3</li>
+      </ul>
+      <hr>
+    </li>
+    <li>Main Item 2
+      <ul>
+        <li>Sub Item 2.1</li>
+        <li>Sub Item 2.2</li>
+      </ul>
+      <hr>
+    </li>
+    <li>Main Item 3
+      <ul>
+        <li>Sub Item 3.1</li>
+        <li>Sub Item 3.2</li>
+        <li>Sub Item 3.3</li>
+        <li>Sub Item 3.4</li>
+      </ul>
+      <hr>
+    </li>
+    <li>Main Item 4
+      <ul>
+        <li>Sub Item 4.1</li>
+      </ul>
+      <hr>
+    </li>
+    <li>Main Item 5
+      <ul>
+        <li>Sub Item 5.1</li>
+        <li>Sub Item 5.2</li>
+      </ul>
+      <hr>
+    </li>
+  </ol>
+
+</body>
+</html>

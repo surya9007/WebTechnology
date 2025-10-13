@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Image Map Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #2e8b57;
+    }
+    img {
+      max-width: 320px;
+      height: auto;
+      border: 2px solid #2e8b57;
+    }
+    a {
+      color: #2e8b57;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML Image Map</h1>
+  <p>Click on different parts of the image to learn more:</p>
+
+  <!-- Image with map -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/320px-HTML5_Badge.svg.png"
+       usemap="#htmlmap" alt="HTML Logo">
+
+  <!-- Define image map -->
+  <map name="htmlmap">
+    <!-- Rectangle hotspot -->
+    <area shape="rect" coords="0,0,100,100" href="first.html" alt="1st">
+    <!-- Circle hotspot -->
+    <area shape="circle" coords="160,60,50" href="second.html" alt="2nd">
+    <!-- Polygon hotspot -->
+    <area shape="poly" coords="220,10,250,80,280,10" href="third.html" alt="3rd">
+  </map>
+
+</body>
+</html>

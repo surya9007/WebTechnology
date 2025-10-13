@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLDIMS Admission Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2e8b57;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="number"],
+    input[type="tel"],
+    select,
+    textarea,
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .radio-group, .checkbox-group {
+      margin-top: 5px;
+    }
+
+    .radio-group input,
+    .checkbox-group input {
+      margin-right: 10px;
+      margin-top: 0;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 15px;
+      width: 100%;
+      background-color: #2e8b57;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #246b45;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+      button {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>LLDIMS Admission Form</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+
+      <!-- Personal Details -->
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" required>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label>Gender:</label>
+      <div class="radio-group">
+        <input type="radio" id="male" name="gender" value="Male" required> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female
+        <input type="radio" id="other" name="gender" value="Other"> Other
+      </div>
+
+      <label for="blood">Blood Group:</label>
+      <select id="blood" name="blood" required>
+        <option value="">--Select--</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+      </select>
+
+      <!-- Contact Details -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required placeholder="e.g. 9876543210">
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" required>
+
+      <label for="pincode">Pincode:</label>
+      <input type="number" id="pincode" name="pincode" required>
+
+      <!-- Academic Details -->
+      <label for="course">Select Course:</label>
+      <select id="course" name="course" required>
+        <option value="">--Select--</option>
+        <option value="BCA">BCA</option>
+        <option value="BSc">BSc</option>
+        <option value="BA">BA</option>
+        <option value="BCom">BCom</option>
+      </select>
+
+      <label for="year">Year of Admission:</label>
+      <input type="number" id="year" name="year" min="2000" max="2100" required>
+
+      <label for="previous_school">Previous School/College:</label>
+      <input type="text" id="previous_school" name="previous_school">
+
+      <!-- Guardian Details -->
+      <label for="guardian_name">Guardian Name:</label>
+      <input type="text" id="guardian_name" name="guardian_name" required>
+
+      <label for="guardian_phone">Guardian Phone:</label>
+      <input type="tel" id="guardian_phone" name="guardian_phone" required>
+
+      <!-- Hobbies & Skills -->
+      <label>Hobbies:</label>
+      <div class="checkbox-group">
+        <input type="checkbox" name="hobbies" value="Reading"> Reading
+        <input type="checkbox" name="hobbies" value="Sports"> Sports
+        <input type="checkbox" name="hobbies" value="Music"> Music
+        <input type="checkbox" name="hobbies" value="Traveling"> Traveling
+        <input type="checkbox" name="hobbies" value="Coding"> Coding
+      </div>
+
+      <label for="skills">Skills:</label>
+      <textarea id="skills" name="skills" rows="2" placeholder="Mention your skills"></textarea>
+
+      <!-- Upload Photo -->
+      <label for="photo">Upload Photo:</label>
+      <input type="file" id="photo" name="photo" accept="image/*">
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Form</button>
+
+    </form>
+  </div>
+
+</body>
+</html>

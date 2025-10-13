@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+      background-size: cover;
+      color: white;
+    }
+    header {
+      text-align: center;
+      background-color: rgba(0,0,0,0.6);
+      padding: 20px;
+    }
+    h1 {
+      color: #ffea00;
+    }
+    nav a {
+      color: yellow;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+    }
+    section {
+      background-color: rgba(0,0,0,0.7);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .fancy1 { font-family: 'Courier New', monospace; color: #ff7f50; }
+    .fancy2 { font-family: 'Times New Roman', serif; color: #7fffd4; }
+    .fancy3 { font-family: Verdana, sans-serif; color: #ffa500; }
+    img { width: 150px; border-radius: 10px; }
+    marquee { font-size: 24px; color: cyan; font-weight: bold; }
+    hr { border: 2px solid yellow; }
+    a.back { display: inline-block; margin-top: 10px; color: cyan; text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header id="top">
+    <h1>HTML Tutorial</h1>
+    <marquee behavior="scroll" direction="left">HTML Tutorial — Learn HTML with Examples</marquee>
+    <nav>
+      <a href="#formatting">Formatting & Headings</a>
+      <a href="#font_image">Font & Image</a>
+      <a href="#marquee_section">Marquee</a>
+      <a href="#other_tags">Other Tags</a>
+    </nav>
+  </header>
+
+  <!-- Formatting & Headings -->
+  <section id="formatting">
+    <h2>Formatting Styles & Headings</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p><b>Bold Text</b> — use <code>&lt;b&gt;</code> for bold.</p>
+    <p><i>Italic Text</i> — use <code>&lt;i&gt;</code> for italic.</p>
+    <p><u>Underlined Text</u> — use <code>&lt;u&gt;</code> for underline.</p>
+    <p><strike>Strikethrough Text</strike> — use <code>&lt;strike&gt;</code>.</p>
+    <p>Water formula: H<sub>2</sub>O — subscript with <code>&lt;sub&gt;</code></p>
+    <p>Square formula: a<sup>2</sup> — superscript with <code>&lt;sup&gt;</code></p>
+
+    <a href="#top" class="back">Back to Top</a>
+  </section>
+
+  <!-- Font Styles & Image -->
+  <section id="font_image">
+    <h2>Font Styles & Image Tag</h2>
+    <p class="fancy1">Courier font style example.</p>
+    <p class="fancy2">Times New Roman font style example.</p>
+    <p class="fancy3">Verdana font style example.</p>
+
+    <h3>Image Example</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo">
+    <p>Image tag: <code>&lt;img src="URL" alt="Description"&gt;</code></p>
+
+    <a href="#top" class="back">Back to Top</a>
+  </section>
+
+  <!-- Marquee -->
+  <section id="marquee_section">
+    <h2>Marquee Examples</h2>
+    <marquee behavior="scroll" direction="right">This is moving text using Marquee.</marquee>
+    <br>
+    <marquee behavior="alternate" direction="left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML Icon">
+    </marquee>
+    <br>
+    <marquee behavior="scroll" direction="up" height="100">
+      <a href="https://www.w3schools.com/html/" target="_blank" style="color:yellow;">Learn HTML</a>
+    </marquee>
+
+    <a href="#top" class="back">Back to Top</a>
+  </section>
+
+  <!-- Other Tags -->
+  <section id="other_tags">
+    <h2>Other HTML Tags</h2>
+
+    <h3>Paragraph (<code>&lt;p&gt;</code>)</h3>
+    <p>This is a paragraph. Use <code>&lt;p&gt;</code> to create paragraphs.</p>
+
+    <h3>Line Break (<code>&lt;br&gt;</code>)</h3>
+    <p>Line 1<br>Line 2 after a line break.</p>
+
+    <h3>Horizontal Rule (<code>&lt;hr&gt;</code>)</h3>
+    <hr>
+
+    <h3>Preformatted Text (<code>&lt;pre&gt;</code>)</h3>
+    <pre>
+This is preformatted text.
+   It preserves spacing and line breaks.
+        Example of indented text.
+    </pre>
+
+    <a href="#top" class="back">Back to Top</a>
+  </section>
+
+</body>
+</html>
